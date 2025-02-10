@@ -1,0 +1,92 @@
+@import './vars.css';
+
+/* .App {
+  background-color: var(--color-bg);
+  width: 100%;
+  height: 100%;
+  color: white;
+
+} */
+
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: #220057;
+  color: white;
+}
+
+.leftPanel {
+  position: fixed;
+  width: 45%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #220057;
+  color: white;
+  padding: 75px 75px;
+}
+
+.leftPanel h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.leftPanel nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.leftPanel nav ul li {
+  margin-bottom: 20px;
+}
+
+.leftPanel nav ul li a {
+  color:white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.leftPanel nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.rightPanel {
+  margin-left: 45%;
+  padding: 75px 20px;
+  overflow-y: auto;
+  width: 55%;
+  height: 100vh;
+  background-color: #220057;
+}
+
+.rightPanel section {
+  margin-bottom: 40px;
+}
+
+.rightPanel h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.projectCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.projectCard {
+  background-color: #220057;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.projectCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}

@@ -8,10 +8,21 @@
 
 } */
 
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #140023;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   display: flex;
   height: 100vh;
-  background-color: #220057;
+  background-color: #140023;
   color: white;
 }
 
@@ -21,14 +32,23 @@
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #220057;
+  background-color: #140023;
   color: white;
   padding: 75px 75px;
+  z-index: 10;
 }
 
 .leftPanel h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+}
+
+.leftPanel h3 {
+  margin-bottom: 1rem;
+}
+
+.leftPanel p {
+  margin-bottom: 6rem;
 }
 
 .leftPanel nav ul {
@@ -53,14 +73,14 @@
 .rightPanel {
   margin-left: 45%;
   padding: 75px 20px;
-  overflow-y: auto;
+  overflow-y: scroll;
   width: 55%;
   height: 100vh;
-  background-color: #220057;
+  background-color: #140023;
 }
 
 .rightPanel section {
-  margin-bottom: 40px;
+  margin-bottom: 75px;
 }
 
 .rightPanel h2 {
@@ -68,25 +88,36 @@
   margin-bottom: 1rem;
 }
 
-.projectCards {
+.experienceCards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* space between cards */
+}
+
+.experienceItem {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 3fr;
   gap: 20px;
+  margin-bottom: 10px;
+  background-color: #140023;
+  border-radius: 16px;
+  padding: 20px;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
 }
 
-.projectCard {
-  background-color: #220057;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.timeSpent {
+  font-size: .3 rem;
+  color: white;
 }
 
-.projectCard:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+.experienceItem:hover {
+  /* transform: translateY(-2px); this adds like a bounce effect on hover*/
+  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); */
+  background-color: rgb(28, 0, 49);
 }
 
-.projectCard h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+.experienceItem h3 {
+  font-size: 1rem;
+  margin-bottom: .7rem;
 }

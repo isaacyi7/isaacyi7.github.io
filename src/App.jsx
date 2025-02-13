@@ -2,20 +2,6 @@ import React, { useEffect, useRef } from "react";
 import styles from "./App.module.css";
 
 function App() {
-  // const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-
-  // useEffect(() => {
-  //   const handleMouseMove = (e) => {
-  //     setMousePosition({ x: e.clientX, y: e.clientY });
-  //   };
-
-  //   window.addEventListener("mousemove", handleMouseMove);
-
-  //   return () => {
-  //     window.removeEventListener("mousemove", handleMouseMove);
-  //   };
-  // }, []);
-
   return (
     <div className={styles.container}>
 
@@ -40,7 +26,7 @@ function App() {
       </div>
 
       {/* right scroll side */}
-      <div className={styles.rightPanel}>
+      <div className={styles.contentWrapper}>
         <section id="about">
         <h2>About</h2>
           <p>

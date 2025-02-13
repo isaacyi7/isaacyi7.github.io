@@ -13,6 +13,7 @@ body, html {
   padding: 0;
   height: 100%;
   background-color: #140023;
+  overflow-x: hidden;
 }
 
 html {
@@ -24,6 +25,8 @@ html {
   height: 100vh;
   background-color: #140023;
   color: white;
+  position: relative; /* Ensure relative positioning for scrolling */
+  overflow-y: auto;
 }
 
 .leftPanel {
@@ -36,6 +39,7 @@ html {
   color: white;
   padding: 75px 75px;
   z-index: 10;
+  overflow-y: auto; /* Allow scrolling on left panel */
 }
 
 .leftPanel h1 {
@@ -77,6 +81,8 @@ html {
   width: 55%;
   height: 100vh;
   background-color: #140023;
+  scroll-padding-top: 150px; /* Keeps the content aligned with the padding of the left panel */
+  scroll-behavior: smooth;
 }
 
 .rightPanel section {

@@ -38,7 +38,7 @@ function AccessibleComponents() {
           <section className={styles.section}>
             <p>I love cooking and baking, so Bon Appetit is a website I frequent often. I always found their dropdown menus complex and unique. Now taking a class on interaction design, I realize it is not the most user-friendly, especially to new users.
               It is difficult to learn, as it requires users to click the different options for the dropdown to appear, rather than just hovering over the text like other drowpdowns. As you can see in the Bon Appetit site, when hovering over an option, the corresponding menu does not appear.
-              I decided to redesign the dropdown menu in figma to make it more user-friendly and accessible, adding on hover functionality. Additionally, some of the options are inaccessible to users
+              I decided to redesign the dropdown menu in figma to make it more user-friendly and accessible, adding on hover functionality. This design is more learnable, memorable, and efficient. Additionally, some of the options in the dropdown menu are inaccessible to users
               just using a keyboard or screen reader. If I continue iterating on this, I would add the correct aria labels and roles to make the dropdown options accessible to all users.
             </p>
           </section>

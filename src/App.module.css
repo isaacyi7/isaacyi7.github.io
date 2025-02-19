@@ -29,7 +29,7 @@ html {
 
 .leftPanel {
   position: fixed;
-  width: 40%;
+  width: 45%;
   height: 100vh;
   top: 0;
   left: 0;
@@ -78,10 +78,10 @@ html {
 }
 
 .contentWrapper {
-  margin-left: 40%;
+  margin-left: 45%;
   padding: 75px 20px;
   /* position: relative; */
-  width: 60%;
+  width: 55%;
   height: 100vh;
   background-color: #140023;
   scroll-padding-top: 150px; /* Keeps the content aligned with the padding of the left panel */

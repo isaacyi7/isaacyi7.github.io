@@ -38,8 +38,9 @@ function AccessibleComponents() {
             <h2>Figma</h2>
           </section>
 
-          <p className={styles.introText}> The dropdown menu is a difficult component to implement, as it differentiable and has accessibility constraints.
-            This project is an exploration of different dropdown menus and their pros and cons. I will specifically be analyzing the components' learnability, memorability, efficiency, and accessibility.
+          <p className={styles.introText}> A component that I really like on websites is the dropdown menu. When done right, they store a large amount of information in a small space while looking sleek. As a now aspiring UX designer with a new perspective on component design,
+            I see that many dropdown menus can be improved in terms of learnability, memorability, efficiency, and accessibility. This page is my exploration of dropdown menus from three different websites.
+
           </p>
 
           <div className={styles.sectionGroup}>

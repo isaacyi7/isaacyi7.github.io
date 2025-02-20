@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import styles from "./App.module.css";
 import { BrowserRouter as Router, Route, Link, Routes, useLocation } from "react-router-dom";
 import AccessibleComponents from "./projects/AccessibleComponents";
+import ScrollToTop from "./components/ScrollToTop";
 
 const MainContent = () => {
   const location = useLocation();
@@ -142,6 +143,7 @@ const MainContent = () => {
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<MainContent />} />
         <Route path="/accessible-components" element={<AccessibleComponents />} />

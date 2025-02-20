@@ -10,16 +10,17 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    flex-direction: column;
 }
 
-.externalLinkIcon{
+.externalLinkIcon {
     font-size: .8rem;
 }
 
 .externalLinkIcon:hover {
-    transform: scale(1.2); /* Make the icon slightly larger on hover */
-    color: #ff6347; /* Change the color on hover */
-  }
+    transform: scale(1.2);
+    color: #ff6347;
+}
 
 .bonAppetitLink {
     text-decoration: none;
@@ -27,21 +28,41 @@
 }
 
 .bonAppetitLink:hover {
-    color: #ff6347; /* Change the link text color on hover */
-  }
+    color: #ff6347;
+}
 
 .bonAppetitLink:hover .externalLinkIcon {
-    color: #ff6347; /* Change the icon color when hovering over the link */
-    transform: scale(1.2); /* Slightly enlarge the icon */
-  }
+    color: #ff6347;
+    transform: scale(1.2);
+}
+
+.introText {
+    max-width: 45%;
+}
 
 .section {
     padding-top: 20px;
-    flex: 1;
+    flex: 0.45; /* Changed from 1 to 0.45 */
+}
+
+.sectionGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: -200px;
+    width: 100%;
+    gap: 30px; /* Added gap to control spacing between text and images */
+}
+
+.section h2 {
+    font-size: 1.2rem;
+    margin-top: 2rem;
 }
 
 .softwareUsed {
     padding-top: 20px;
+    padding-bottom: 5px;
 }
 
 .softwareUsed h2 {
@@ -49,10 +70,26 @@
     font-style: italic;
 }
 
-.section p {
-    max-width: 90%;
+p {
+    width: 100%; /* Changed from max-width: 45% */
     line-height: 1.5;
     font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.textContent p {
+    width: 100%; /* Changed from max-width: 45% */
+}
+
+.bonAppetitHeading {
+    margin-top: 0.5rem;
+}
+
+.section p {
+    width: 100%; /* Changed from max-width: 45% */
+    line-height: 1.5;
+    font-size: 1rem;
+    margin-bottom: 10px;
 }
 
 h2 {
@@ -76,19 +113,19 @@ h3 {
 }
 
 .backArrowLink:hover {
-    color: #ff6347; /* Change the link text color on hover */
+    color: #ff6347;
 }
-
 
 .scrollableImagesContainer {
     display: flex;
     overflow-x: auto;
     gap: 15px;
-    padding: 20px 0;
-    width: 50%;
+    padding-top: 0px;
     height: 100vh;
     overflow-y: hidden;
     margin-top: -100px;
+    flex: 0.55; /* Keep this to maintain proportion */
+    width: 50%; /* Changed from max-width: 55% */
 }
 
 .scrollableImagesContainer img {
@@ -101,9 +138,37 @@ h3 {
 }
 
 .scrollableImagesContainer::-webkit-scrollbar {
-    display: none; /* Hides the scrollbar */
+    display: none;
+}
+
+ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    margin-bottom: 10px;
+}
+
+ul li {
+    margin-bottom: 5px;
+    line-height: 1.5;
+    width: 100%; /* Changed from max-width: 45% */
 }
 
 .textContent {
-    flex: 1; /* Allow text content to take up remaining space */
+    flex: 0.45;
+}
+
+.expandButton {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: .8rem;
+    font-weight: bold;
+    padding: 8px 0;
+    margin: 4px 0;
+    transition: opacity 0.2s ease;
+}
+
+.expandButton:hover {
+    opacity: 0.8;
 }

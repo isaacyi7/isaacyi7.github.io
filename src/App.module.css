@@ -12,7 +12,7 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: #140023;
+  background-color: #0D0630;
 }
 
 html {
@@ -22,7 +22,7 @@ html {
 .container {
   display: flex;
   height: 100vh;
-  background-color: #140023;
+  background-color: #0D0630;
   color: white;
   /* overflow-y: auto; */
 }
@@ -33,7 +33,7 @@ html {
   height: 100vh;
   top: 0;
   left: 0;
-  background-color: #140023;
+  background-color: #0D0630;
   color: white;
   padding: 75px 75px;
   z-index: 10;
@@ -83,7 +83,7 @@ html {
   /* position: relative; */
   width: 55%;
   height: 100vh;
-  background-color: #140023;
+  background-color: #0D0630;
   scroll-padding-top: 150px; /* Keeps the content aligned with the padding of the left panel */
   scroll-behavior: smooth;
 }
@@ -108,9 +108,11 @@ html {
   grid-template-columns: 1fr 3fr;
   gap: 20px;
   margin-bottom: 10px;
-  background-color: #140023;
+  background-color: #0D0630;
   border-radius: 16px;
   padding: 20px;
+  text-decoration: none;
+  color: inherit;
   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
   /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
 }
@@ -123,22 +125,30 @@ html {
 .experienceItem:hover {
   /* transform: translateY(-2px); this adds like a bounce effect on hover*/
   /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); */
-  background-color: rgb(28, 0, 49);
+  background-color: #140949;
+}
+
+.experienceItem:hover h3 {
+  color: #8BBEB2
 }
 
 .experienceItem h3 {
   font-size: 1rem;
   margin-bottom: .7rem;
+  font-weight: 550;
 }
+
 
 .projectItem {
   display: flex;
   grid-template-columns: 1fr 3fr;
   gap: 20px;
   margin-bottom: 10px;
-  background-color: #140023;
+  background-color: #0D0630;
   border-radius: 16px;
   padding: 20px;
+  text-decoration: none;
+  color: inherit;
 }
 
 .projectItem .projectDetails {
@@ -150,6 +160,7 @@ html {
 .projectItem .projectDetails h3 {
   font-size: 1.5rem; /* Adjust as needed */
   margin-bottom: .7rem;
+  text-decoration: none;
 }
 
 .projectItem .projectDetails p {
@@ -165,5 +176,25 @@ html {
 .projectItem:hover {
   /* transform: translateY(-2px); this adds like a bounce effect on hover*/
   /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); */
-  background-color: rgb(28, 0, 49);
+  background-color: #2A2A40; /* Lighter grayish-blue */
+}
+
+.projectItem a {
+  color: white;
+  text-decoration: none;
+}
+
+.projectItem a:hover {
+  text-decoration: underline;
+}
+
+.experienceDescription {
+  opacity: 0.8;
+}
+
+.externalIcon {
+  font-size: 0.7rem;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  font-weight: 550;
 }

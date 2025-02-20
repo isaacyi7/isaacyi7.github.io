@@ -44,15 +44,8 @@ const MainContent = () => {
         {/* right scroll side */}
         <div className={styles.contentWrapper}>
           <section id="about">
-            <h2>About</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              I am a senior at Brown University studying Computer Science and Economics.
             </p>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -67,13 +60,16 @@ const MainContent = () => {
 
           <section id="experience">
             <h2>Experience</h2>
-            <div className={styles.experienceItem}>
+            <a href="https://www.capitalone.com/tech/" target="_blank" rel="noopener noreferrer" className={styles.experienceItem}>
               <div className={styles.timeSpent}>
                 <p>06/2024 - 08/2024</p>
               </div>
               <div className={styles.experienceDetails}>
-                <h3>Software Engineering Intern, Capital One</h3>
-                <p>
+                <h3>
+                  Software Engineering Intern, Capital One
+                  <span className={styles.externalIcon}>↗</span>
+                </h3>
+                <p className={styles.experienceDescription}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -83,8 +79,7 @@ const MainContent = () => {
                   cupidatat non proident
                 </p>
               </div>
-            </div>
-
+            </a>
             {/* more experiences */}
             <div className={styles.experienceItem}>
               <div className={styles.timeSpent}>
@@ -92,7 +87,7 @@ const MainContent = () => {
               </div>
               <div className={styles.experienceDetails}>
                 <h3>Experience 2 goes here</h3>
-                <p>
+                <p className={styles.experienceDescription}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -111,21 +106,17 @@ const MainContent = () => {
               {/* Example project box */}
               <Link to="/accessible-components" className={styles.projectItem}>
                 <div className={styles.projectLink}>
-                  <div className={styles.timeSpent}>
-                    <p>My Awesome Project</p>
-                  </div>
+                    <p>02/2025</p>
                   <div className={styles.projectDetails}>
-                    <h3>Accessible Components: Bon Appetit</h3>
-                    <p>A brief description of the project...</p>
+                    <h3>Accessible Components: Dropdown Menus</h3>
+                    <p>An analysis on the learnability, memorability, efficiency, and accessibility of three different dropdown menus.</p>
                   </div>
                 </div>
               </Link>
 
               <Link to="/accessible-components" className={styles.projectItem}>
                 <div className={styles.projectLink}>
-                  <div className={styles.timeSpent}>
                     <p>My Awesome Project</p>
-                  </div>
                   <div className={styles.projectDetails}>
                     <h3>Accessible Components: Bon Appetit</h3>
                     <p>A brief description of the project...</p>

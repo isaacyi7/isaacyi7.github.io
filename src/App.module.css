@@ -1,5 +1,4 @@
 @import './vars.css';
-
 /* .App {
   background-color: var(--color-bg);
   width: 100%;
@@ -51,6 +50,7 @@ html {
 
 .leftPanel p {
   margin-bottom: 6rem;
+  opacity: 0.7;
 }
 
 .leftPanel nav ul {
@@ -113,13 +113,14 @@ html {
   padding: 20px;
   text-decoration: none;
   color: inherit;
-  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
-  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
 }
 
 .timeSpent {
-  font-size: .3 rem;
+  font-size: .2rem;
   color: white;
+}
+.timeSpent p {
+  font-size: .8rem;
 }
 
 .experienceItem:hover {
@@ -136,8 +137,17 @@ html {
   font-size: 1rem;
   margin-bottom: .7rem;
   font-weight: 550;
+  
 }
 
+.projectLink {
+  display: flex;
+  align-items: center; /* Aligns the image and text vertically */
+}
+
+.projectLink p {
+  font-size: .8rem;
+}
 
 .projectItem {
   display: flex;
@@ -158,14 +168,15 @@ html {
 }
 
 .projectItem .projectDetails h3 {
-  font-size: 1.5rem; /* Adjust as needed */
-  margin-bottom: .7rem;
+  font-size: 1rem; /* Adjust as needed */
   text-decoration: none;
+  font-weight: 550;
 }
 
 .projectItem .projectDetails p {
-  font-size: 1rem; /* Adjust as needed */
+  font-size: .8rem;
   margin-bottom: .7rem;
+  opacity: .7;
 }
 
 .projectCards {
@@ -189,7 +200,7 @@ html {
 }
 
 .experienceDescription {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .externalIcon {
@@ -197,4 +208,22 @@ html {
   margin-left: 5px;
   margin-bottom: 5px;
   font-weight: 550;
+}
+
+.aboutText {
+  opacity: .7;
+}
+
+.squid {
+  /* cursor: url('/assets/pointers/squidward-cursor.png'), 16 16 auto !important; */
+  cursor: url('../public/assets/pointers/cursor.png') 16 16, pointer;
+}
+
+
+.projectPreviewImage {
+  width: 100px; /* Adjust size as needed */
+  height: 80px; /* Adjust size as needed */
+  object-fit: cover; /* Ensures the image doesn't stretch or distort */
+  border-radius: 8px; /* Optional, gives a rounded corner to the image */
+  margin-right: 20px; /* Space between the image and text */
 }

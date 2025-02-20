@@ -24,7 +24,7 @@ const MainContent = () => {
         {/* left static fixed side */}
         <div className={styles.leftPanel}>
           <h1>Hi, I'm Isaac</h1>
-          <h3>Software Engineer @ Brown University</h3>
+          <h3>Computer Science Economics @ Brown University</h3>
           <p>Building projects</p>
           <nav>
             <ul>
@@ -44,17 +44,24 @@ const MainContent = () => {
         {/* right scroll side */}
         <div className={styles.contentWrapper}>
           <section id="about">
-            <p>
-              I am a senior at Brown University studying Computer Science and Economics.
+            <p className={styles.aboutText}>
+              I am a developer interested in stewarding technology and quantitative
+              solutions to solve financial, environmental, and security problems. I hope
+              the products I create ultimately benefit these industries and the people 
+              they serve.
             </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <p className={styles.aboutText}>
+              From using large amounts of data to analyze the carbon footprint of NYC buildings for 
+              New York City's Division of Energy Mangement to being a Teaching Assistant for 
+              the largest CS class at Brown, I have had a variety of quantitative experiences 
+              across various industries that have shaped me to be the engineer and creator I am today. 
+            </p>
+            <p className={styles.aboutText}>
+              Currently, my offline pursuits include {" "}
+              <span className={styles.squid}>
+                reteaching myself the clarinet
+              </span>
+              , training for a half marathon, learning the Luigi zero-death combo, and binging Brooklyn 99.
             </p>
           </section>
 
@@ -70,13 +77,10 @@ const MainContent = () => {
                   <span className={styles.externalIcon}>↗</span>
                 </h3>
                 <p className={styles.experienceDescription}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident
+                  Worked with the Cyber Reboot Team to develop and deploy an internal web app using FastAPI and React
+                  to visualize live AWS service interdependencies. The app is used to ensure developers adhere to resources
+                  requested in their project proposals and to identify excess spending. Also optimized concurrency and 
+                  other performance improvements to handle up to 50 users while maintaining {"<"} 1 second response times.
                 </p>
               </div>
             </a>
@@ -106,8 +110,14 @@ const MainContent = () => {
               {/* Example project box */}
               <Link to="/accessible-components" className={styles.projectItem}>
                 <div className={styles.projectLink}>
-                    <p>02/2025</p>
+                <img 
+                  src="./assets/images/nike1.jpg" 
+                  alt="Project Preview" 
+                  className={styles.projectPreviewImage}
+                />
+                   
                   <div className={styles.projectDetails}>
+                  <p>02/2025</p>
                     <h3>Accessible Components: Dropdown Menus</h3>
                     <p>An analysis on the learnability, memorability, efficiency, and accessibility of three different dropdown menus.</p>
                   </div>

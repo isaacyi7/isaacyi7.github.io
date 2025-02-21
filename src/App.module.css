@@ -227,3 +227,26 @@ html {
   border-radius: 8px; /* Optional, gives a rounded corner to the image */
   margin-right: 20px; /* Space between the image and text */
 }
+
+@media (max-width: 768px) {
+  /* Stack the layout vertically */
+  .container {
+    flex-direction: column;
+    height: auto; /* Allow content to expand vertically */
+  }
+
+  /* Left Panel should now be part of the normal flow */
+  .leftPanel {
+    position: static; /* Make it static on smaller screens */
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* Content Wrapper should also be stacked and take full width */
+  .contentWrapper {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+}

@@ -87,18 +87,14 @@ const MainContent = () => {
             {/* more experiences */}
             <div className={styles.experienceItem}>
               <div className={styles.timeSpent}>
-                <p>2025-2026</p>
+                <p>01/2022-05/2024</p>
               </div>
               <div className={styles.experienceDetails}>
-                <h3>Experience 2 goes here</h3>
+                <h3>Undergraduate Teaching Assistant, Brown University</h3>
                 <p className={styles.experienceDescription}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident
+                  Teaching assistant for Ordinary Differential Equations,
+                  Partial Differential Equations, and Data Structures and 
+                  Algorithms. 
                 </p>
               </div>
             </div>
@@ -120,16 +116,6 @@ const MainContent = () => {
                   <p>02/2025</p>
                     <h3>Accessible Components: Dropdown Menus</h3>
                     <p>An analysis on the learnability, memorability, efficiency, and accessibility of three different dropdown menus.</p>
-                  </div>
-                </div>
-              </Link>
-
-              <Link to="/accessible-components" className={styles.projectItem}>
-                <div className={styles.projectLink}>
-                    <p>My Awesome Project</p>
-                  <div className={styles.projectDetails}>
-                    <h3>Accessible Components: Bon Appetit</h3>
-                    <p>A brief description of the project...</p>
                   </div>
                 </div>
               </Link>

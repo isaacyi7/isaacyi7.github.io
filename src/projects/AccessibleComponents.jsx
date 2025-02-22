@@ -14,6 +14,10 @@ import aws2 from '../assets/images/aws2.jpg';
 import aws3 from '../assets/images/aws3.jpg';
 import aws4 from '../assets/images/aws4.jpg';
 import aws5 from '../assets/images/aws5.jpg';
+import diagram1 from '../assets/images/diagram1.jpg'
+import diagram2 from '../assets/images/diagram2.jpg'
+import diagram3 from '../assets/images/diagram3.jpg'
+import diagram4 from '../assets/images/diagram4.jpg'
 
 
 function AccessibleComponents() {
@@ -80,6 +84,10 @@ function AccessibleComponents() {
             <div className={styles.scrollableImagesContainer}>
               <img src={image1} alt="Bon Appetit Menu with no interaction" />
               <img src={image2} alt="Bon Appetit Menu with interaction" />
+              <img src={diagram1} alt="Bon Appetit Menu with interaction" />
+              <img src={diagram2} alt="Bon Appetit Menu with interaction" />
+              <img src={diagram3} alt="Bon Appetit Menu with interaction" />
+              <img src={diagram4} alt="Bon Appetit Menu with interaction" />
               <img src={image3} alt="My version with no interaction" />
               <img src={image4} alt="My version with interaction" />
             </div>

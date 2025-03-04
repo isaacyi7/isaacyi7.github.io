@@ -64,14 +64,14 @@ function AccessibleComponents() {
               
             </div>
             <div className={styles.scrollableImagesContainer}>
-              <img src="/assets/images/nointeractionba.jpg" alt="Bon Appetit Menu with no interaction" />
-              <img src="/assets/images/interaction.jpg" alt="Bon Appetit Menu with interaction" />
-              <img src="/assets/images/diagram1.jpg" alt="Bon Appetit Menu with interaction" />
-              <img src="/assets/images/diagram2.jpg" alt="Bon Appetit Menu with interaction" />
-              <img src="/assets/images/diagram3.jpg'" alt="Bon Appetit Menu with interaction" />
-              <img src="/assets/images/diagram4.jpg" alt="Bon Appetit Menu with interaction" />
-              <img src="/assets/images/myBAno.jpg" alt="My version with no interaction" />
-              <img src="/assets/images/myBAyes.jpg" alt="My version with interaction" />
+              <img src={`${import.meta.env.BASE_URL}assets/images/nointeractionba.jpg`} alt="No Interaction BA" />
+              <img src={`${import.meta.env.BASE_URL}assets/images/interaction.jpg`} alt="Bon Appetit Menu with interaction" />
+              <img src={`${import.meta.env.BASE_URL}assets/images/diagram1.jpg`} alt="Bon Appetit Menu with interaction" />
+              <img src={`${import.meta.env.BASE_URL}assets/images/diagram2.jpg`} alt="Bon Appetit Menu with interaction" />
+              <img src={`${import.meta.env.BASE_URL}assets/images/diagram3.jpg`} alt="Bon Appetit Menu with interaction" />
+              <img src={`${import.meta.env.BASE_URL}assets/images/diagram4.jpg`} alt="Bon Appetit Menu with interaction" />
+              <img src={`${import.meta.env.BASE_URL}assets/images/myBAno.jpg`} alt="My version with no interaction" />
+              <img src={`${import.meta.env.BASE_URL}assets/images/myBAyes.jpg`} alt="My version with interaction" />
             </div>
           </div>
 
@@ -112,10 +112,10 @@ function AccessibleComponents() {
                 )}
             </div>
             <div className={styles.scrollableImagesContainer}>
-              <img src="/assets/images/nike1.jpg" alt="My version with no interaction" />
-              <img src="/assets/images/nike2.jpg" alt="My version with interaction" />
-              <img src="/assets/images/nike3.jpg" alt="My version with interaction" />
-              <img src="/assets/images/nike4.jpg" alt="My version with interaction" />
+              <img src={`${import.meta.env.BASE_URL}assets/images/nike1.jpg`} alt="My version with no interaction" />
+              <img src={`${import.meta.env.BASE_URL}assets/images/nike2.jpg`} alt="My version with interaction" />
+              <img src={`${import.meta.env.BASE_URL}assets/images/nike3.jpg`} alt="My version with interaction" />
+              <img src={`${import.meta.env.BASE_URL}assets/images/nike4.jpg`} alt="My version with interaction" />
             </div>
           </div>
 
@@ -156,10 +156,10 @@ function AccessibleComponents() {
 
             </div>
             <div className={styles.scrollableImagesContainer}>
-              <img src="/assets/images/aws1.jpg" alt="My version with no interaction" />
-              <img src="/assets/images/aws2.jpg" alt="My version with interaction" />
-              <img src="/assets/images/aws3.jpg" alt="My version with no interaction" />
-              <img src="/assets/images/aws4.jpg" alt="My version with interaction" />
+              <img src={`${import.meta.env.BASE_URL}assets/images/aws1.jpg`} alt="My version with no interaction" />
+              <img src={`${import.meta.env.BASE_URL}assets/images/aws2.jpg`} alt="My version with interaction" />
+              <img src={`${import.meta.env.BASE_URL}assets/images/aws3.jpg`} alt="My version with no interaction" />
+              <img src={`${import.meta.env.BASE_URL}assets/images/aws4.jpg`} alt="My version with interaction" />
             </div>
           </div>
         </div>

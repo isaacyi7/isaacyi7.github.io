@@ -107,7 +107,7 @@ const MainContent = () => {
               <Link to="/accessible-components" className={styles.projectItem}>
                 <div className={styles.projectLink}>
                 <img 
-                  src="./assets/images/nike1.jpg" 
+                  src="../public/assets/images/nike1.jpg" 
                   alt="Project Preview" 
                   className={styles.projectPreviewImage}
                 />

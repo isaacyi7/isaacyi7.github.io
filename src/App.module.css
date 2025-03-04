@@ -216,7 +216,7 @@ html {
 
 .squid {
   /* cursor: url('/assets/pointers/squidward-cursor.png'), 16 16 auto !important; */
-  cursor: url('../public/assets/pointers/cursor.png') 16 16, pointer;
+  cursor: url('/assets/pointers/cursor.png') 16 16, pointer;
 }
 
 

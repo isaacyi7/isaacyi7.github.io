@@ -1,24 +1,6 @@
 import React, { useState } from 'react';
 import styles from './AccessibleComponents.module.css';
 import { Link } from 'react-router-dom';
-import image1 from '../assets/images/nointeractionba.jpg';
-import image2 from '../assets/images/interaction.jpg';
-import image3 from '../assets/images/myBAno.jpg';
-import image4 from '../assets/images/myBAyes.jpg';
-import nike1 from '../assets/images/nike1.jpg';
-import nike2 from '../assets/images/nike2.jpg';
-import nike3 from '../assets/images/nike3.jpg';
-import nike4 from '../assets/images/nike4.jpg';
-import aws1 from '../assets/images/aws1.jpg';
-import aws2 from '../assets/images/aws2.jpg';
-import aws3 from '../assets/images/aws3.jpg';
-import aws4 from '../assets/images/aws4.jpg';
-import aws5 from '../assets/images/aws5.jpg';
-import diagram1 from '../assets/images/diagram1.jpg'
-import diagram2 from '../assets/images/diagram2.jpg'
-import diagram3 from '../assets/images/diagram3.jpg'
-import diagram4 from '../assets/images/diagram4.jpg'
-
 
 function AccessibleComponents() {
   const [isBAExpanded, setIsBAExpanded] = useState(false);
@@ -82,14 +64,14 @@ function AccessibleComponents() {
               
             </div>
             <div className={styles.scrollableImagesContainer}>
-              <img src={image1} alt="Bon Appetit Menu with no interaction" />
-              <img src={image2} alt="Bon Appetit Menu with interaction" />
-              <img src={diagram1} alt="Bon Appetit Menu with interaction" />
-              <img src={diagram2} alt="Bon Appetit Menu with interaction" />
-              <img src={diagram3} alt="Bon Appetit Menu with interaction" />
-              <img src={diagram4} alt="Bon Appetit Menu with interaction" />
-              <img src={image3} alt="My version with no interaction" />
-              <img src={image4} alt="My version with interaction" />
+              <img src="/assets/images/nointeractionba.jpg" alt="Bon Appetit Menu with no interaction" />
+              <img src="/assets/images/interaction.jpg" alt="Bon Appetit Menu with interaction" />
+              <img src="/assets/images/diagram1.jpg" alt="Bon Appetit Menu with interaction" />
+              <img src="/assets/images/diagram2.jpg" alt="Bon Appetit Menu with interaction" />
+              <img src="/assets/images/diagram3.jpg'" alt="Bon Appetit Menu with interaction" />
+              <img src="/assets/images/diagram4.jpg" alt="Bon Appetit Menu with interaction" />
+              <img src="/assets/images/myBAno.jpg" alt="My version with no interaction" />
+              <img src="/assets/images/myBAyes.jpg" alt="My version with interaction" />
             </div>
           </div>
 
@@ -130,10 +112,10 @@ function AccessibleComponents() {
                 )}
             </div>
             <div className={styles.scrollableImagesContainer}>
-              <img src={nike1} alt="My version with no interaction" />
-              <img src={nike2} alt="My version with interaction" />
-              <img src={nike3} alt="My version with interaction" />
-              <img src={nike4} alt="My version with interaction" />
+              <img src="/assets/images/nike1.jpg" alt="My version with no interaction" />
+              <img src="/assets/images/nike2.jpg" alt="My version with interaction" />
+              <img src="/assets/images/nike3.jpg" alt="My version with interaction" />
+              <img src="/assets/images/nike4.jpg" alt="My version with interaction" />
             </div>
           </div>
 
@@ -160,7 +142,6 @@ function AccessibleComponents() {
                 </button>
                 {isAWSExpanded && (
                   <>
-                    
                     <ul>
                 <li>Learnability: AWS also uses hover functionality. It is learnable for mouse users, but keyboard users may have a difficult time learning because some parts are inaccessible. </li>
                 <li>Memorability: The memorability is fine, as it is simple. There are some bugs that might distract, but overall it is an intuitive design.</li>
@@ -175,10 +156,10 @@ function AccessibleComponents() {
 
             </div>
             <div className={styles.scrollableImagesContainer}>
-              <img src={aws1} alt="My version with no interaction" />
-              <img src={aws2} alt="My version with interaction" />
-              <img src={aws3} alt="My version with no interaction" />
-              <img src={aws4} alt="My version with interaction" />
+              <img src="/assets/images/aws1.jpg" alt="My version with no interaction" />
+              <img src="/assets/images/aws2.jpg" alt="My version with interaction" />
+              <img src="/assets/images/aws3.jpg" alt="My version with no interaction" />
+              <img src="/assets/images/aws4.jpg" alt="My version with interaction" />
             </div>
           </div>
         </div>
